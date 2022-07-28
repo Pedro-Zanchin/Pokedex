@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+    background-color: darkgray;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokedex {
+    height: auto;
+    width: 800px;
+    position: relative;
+}
+
+.searchForm input[type=text] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -185%);
+    -ms-transform: translate(-50%, -50%);
+    width: 235px;
+    height: 22px;
+    background-color: #A6D9FD;
+    border: none;
+}
+
+.searchForm .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-260%, -128%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #008AEE;
+    width: 38px;
+    height: 38px;
+    border: none;
+    box-shadow: inset -3px -3px 0px 3px #09568D;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.searchForm .btn:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-260%, -128%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #0064ac;
+    width: 38px;
+    height: 38px;
+    border: none;
+    box-shadow: inset -3px -3px 0px 3px #06395e;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#contPokemon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(33%, 333%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #F0F5E7;
+    color: gray;
+    width: 250px;
+    height: 50px;
+}
+
+#imgPokemon .normal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(70%, -30%);
+    -ms-transform: translate(-50%, -50%);
+    width: 150px;
+}
+
+#imgPokemon .shiny {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(240%, -65%);
+    -ms-transform: translate(-50%, -50%);
+    width: 100px;
+}
+ .type1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(450%, -300%);
+    -ms-transform: translate(-50%, -50%);
+    width: 20px;
+ }
+
+ .type2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(450%, -160%);
+    -ms-transform: translate(-50%, -50%);
+    width: 20px;
+ }
+
+ @media screen and (max-width: 799px) {
+    .pokedex {
+        height: auto;
+        width: 400px;
+        position: relative;
+    }
+    
+ }
