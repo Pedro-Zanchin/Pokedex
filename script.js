@@ -1,4 +1,5 @@
-var formSearch = document.querySelector('form');
+var formSearch = document.querySelector('.searchForm');
+var btShiny = document.querySelector('.btnShiny');
 
 formSearch.addEventListener('submit', function(e){
 
@@ -12,6 +13,7 @@ formSearch.addEventListener('submit', function(e){
     let html = "";
     let type = "";
     let blank = "";
+    var isShiny = 0;
 
     urlForm = urlForm + name.value.toLocaleLowerCase();
 
@@ -149,9 +151,27 @@ formSearch.addEventListener('submit', function(e){
         }
         html = html + "<br>";
         imageType.innerHTML = type;
-        image.innerHTML = "<img src='" + data.sprites.front_default + "' class='normal'><img src='" + data.sprites.front_shiny + "' class='shiny'>";
+        if(isShiny == 0) {
+            image.innerHTML = "<img src='" + data.sprites.front_default + "' class='normal'>";
+        }
+        else {
+            image.innerHTML = "<img src='" + data.sprites.front_shiny + "' class='normal'>";
+        }
 
         content.innerHTML = html;
+
+        btShiny.onclick = function shiny(){
+            if(isShiny == 0) {
+                image.innerHTML = "<img src='" + data.sprites.front_shiny + "' class='normal'>";
+                
+                isShiny = isShiny + 1;
+            }
+            else {
+                image.innerHTML = "<img src='" + data.sprites.front_default + "' class='normal'>";
+                
+                isShiny = isShiny - 1;
+            }
+        }
     })
     .catch(function(err) {
         console.log(err);

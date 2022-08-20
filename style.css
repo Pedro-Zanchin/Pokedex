@@ -82,13 +82,13 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(33%, 345%);
+    transform: translate(33%, 330%);
     -ms-transform: translate(-50%, -50%);
     background-color: #F0F5E7;
     color: gray;
     width: 250px;
     height: 50px;
-    line-height: 1.8;
+    line-height: 1.6;
     letter-spacing: 1px;
 }
 
@@ -96,18 +96,37 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(70%, -30%);
+    transform: translate(82%, -40%);
     -ms-transform: translate(-50%, -50%);
-    width: 150px;
+    width: 160px;
 }
 
-#imgPokemon .shiny {
+.btnShiny {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(240%, -65%);
+    transform: translate(424%, 489%);
     -ms-transform: translate(-50%, -50%);
-    width: 100px;
+    background-color: #FF0025;
+    width: 22px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btnShiny:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(424%, 489%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #a70019;
+    width: 22px;
+    height: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .type1 {
@@ -154,11 +173,15 @@ main {
     }
 
     #imgPokemon .normal {
-        transform: translate(-85%, -10%);
+        transform: translate(-65%, -20%);
     }
 
-    #imgPokemon .shiny {
-        transform: translate(5%, -40%);
+    .btnShiny {
+        transform: translate(-634.1%, 606%);
+    }
+
+    .btnShiny:hover {
+        transform: translate(-634.1%, 606%);
     }
 
     .type1 {
