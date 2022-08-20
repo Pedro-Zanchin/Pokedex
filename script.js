@@ -55,7 +55,7 @@ formSearch.addEventListener('submit', function(e){
                         type = "<img src='images/types/ghost.webp' class='type1'>";
                         break;
                     case 'grass':
-                        imageType.innerHTML = "<img src='images/types/grass.png' class='type1'>";
+                        type = "<img src='images/types/grass.png' class='type1'>";
                         break;
                     case 'ground':
                         type = "<img src='images/types/ground.webp' class='type1'>";
