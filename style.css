@@ -40,11 +40,11 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-150%, -185%);
+    transform: translate(-150%, -195%);
     -ms-transform: translate(-50%, -50%);
     width: 235px;
-    height: 22px;
-    background-color: #A6D9FD;
+    height: 20px;
+    background: none;
     border: none;
 }
 
@@ -156,7 +156,7 @@ main {
     }
     
     .searchForm input[type=text] {
-        transform: translate(-70%, -430%);
+        transform: translate(-70%, -465%);
         width: 225px;
     }
 
