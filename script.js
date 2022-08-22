@@ -175,6 +175,7 @@ formSearch.addEventListener('submit', function(e){
     })
     .catch(function(err) {
         console.log(err);
+        btShiny.onclick = 0;
         if(err == 'SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data'){
             html = 'Esse pokemon não existe!';
             image.innerHTML = blank;
